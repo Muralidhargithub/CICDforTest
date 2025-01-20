@@ -1,0 +1,4 @@
+source "https://rubygems.org"
+
+gem "fastlane"  # Fastlane gem
+gem "cocoapods" # Add this if you're using CocoaPods

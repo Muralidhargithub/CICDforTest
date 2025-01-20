@@ -1,15 +1,12 @@
 name: iOS CI Pipeline
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
     branches:
       - main
 
 jobs:
-  build:
+  build-and-test:
     runs-on: macos-latest
 
     steps:
@@ -17,14 +14,18 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Step 2: Set up Xcode environment
-      - name: Set up Xcode
-        run: sudo xcode-select -switch /Applications/Xcode.app
+      # Step 2: Set up Ruby environment
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1 # Use a version compatible with your setup
 
-      # Step 3: Build and test the project
-      - name: Build and Test
+      # Step 3: Install dependencies via Bundler
+      - name: Install dependencies
         run: |
-          xcodebuild test \
-            -project StructSetProject.xcodeproj \
-            -scheme StructSetProject \
-            -destination 'platform=iOS Simulator,name=iPhone 14'
+          gem install bundler
+          bundle install --path vendor/bundle
+
+      # Step 4: Run tests using Fastlane
+      - name: Run Tests with Fastlane
+        run: bundle exec fastlane run_tests
