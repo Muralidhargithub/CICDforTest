@@ -1,0 +1,12 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "Run tests for the project"
+  lane :run_tests do
+    scan(
+      project: "StructSetProject.xcodeproj",
+      scheme: "StructSetProject",
+      devices: ["iPhone 14"]
+    )
+  end
+end
