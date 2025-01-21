@@ -70,4 +70,12 @@ final class StructSetTests: XCTestCase {
             structSet.addElements([5, 2, 8, 3, 1])
             XCTAssertEqual(structSet.elements, [1, 2, 3, 5, 8], "The elements should be sorted and unique.")
         }
+    func testRemoveElement() {
+           var structSet = StructSet<Int>()
+           structSet.addElements([1, 2, 3, 4, 5])
+           structSet.removeValue(3)
+           
+           XCTAssertEqual(structSet.elements, [1, 2, 4, 5], "The element 3 should be removed from the set.")
+           XCTAssertFalse(structSet.elements.contains(3), "The set should not contain the removed element.")
+       }
 }
