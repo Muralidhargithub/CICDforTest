@@ -30,6 +30,7 @@
 		37E13C142D3EEBAB000BAD92 /* SampleApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SampleApp.xcodeproj; sourceTree = "<group>"; };
 		37E13CA92D3EEBAC000BAD92 /* Terminal Notifier.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Terminal Notifier.xcodeproj"; sourceTree = "<group>"; };
 		37E144952D3EEBB0000BAD92 /* FastlaneSwiftRunner.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = FastlaneSwiftRunner.xcodeproj; sourceTree = "<group>"; };
+		37E1BA412D403CFF000BAD92 /* SampleApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SampleApp.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -129,6 +130,13 @@
 			sourceTree = "<group>";
 		};
 		37E144AF2D3EEBB0000BAD92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37E1BBBB2D403CFF000BAD92 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -250,6 +258,10 @@
 				{
 					ProductGroup = 37E13C2C2D3EEBAB000BAD92 /* Products */;
 					ProjectRef = 37E13C142D3EEBAB000BAD92 /* SampleApp.xcodeproj */;
+				},
+				{
+					ProductGroup = 37E1BBBB2D403CFF000BAD92 /* Products */;
+					ProjectRef = 37E1BA412D403CFF000BAD92 /* SampleApp.xcodeproj */;
 				},
 				{
 					ProductGroup = 37E13CAF2D3EEBAC000BAD92 /* Products */;

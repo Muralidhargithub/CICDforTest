@@ -1,0 +1,16 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "Run unit tests for CDTests target"
+  lane :run_tests do
+    scan(
+      project: "CD.xcodeproj",
+      scheme: "CD",
+      devices: ["iPhone 14"],
+      only_testing: ["CDTests"],
+      clean: true,
+      output_types: "html,junit",    
+      output_directory: "fastlane/test_output"
+    )
+  end
+end
