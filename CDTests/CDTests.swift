@@ -65,4 +65,9 @@ final class StructSetTests: XCTestCase {
         let minElement = structSet.minArrayEle()
         XCTAssertEqual(minElement, 1)
     }
+    func testAddElements() {
+            var structSet = StructSet<Int>()
+            structSet.addElements([5, 2, 8, 3, 1])
+            XCTAssertEqual(structSet.elements, [1, 2, 3, 5, 8], "The elements should be sorted and unique.")
+        }
 }

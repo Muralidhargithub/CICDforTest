@@ -21,7 +21,7 @@ jobs:
           ruby-version: 3.1 # Use a version compatible with your setup
 
       # Step 3: Install dependencies via Bundler
-      - name: Install dependencies
+      - name: Install dependenciesfast
         run: |
           gem install bundler
           bundle install --path vendor/bundle
