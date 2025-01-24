@@ -67,11 +67,6 @@
 			path = .github;
 			sourceTree = "<group>";
 		};
-		37E1C3A52D40443F000BAD92 /* Gemfile */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Gemfile;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +97,6 @@
 		37E116ED2D3EE544000BAD92 = {
 			isa = PBXGroup;
 			children = (
-				37E1C3A52D40443F000BAD92 /* Gemfile */,
 				37E1172C2D3EE6E8000BAD92 /* .github */,
 				37E116F82D3EE544000BAD92 /* CD */,
 				37E1170F2D3EE546000BAD92 /* CDTests */,
@@ -167,11 +161,8 @@
 			fileSystemSynchronizedGroups = (
 				37E116F82D3EE544000BAD92 /* CD */,
 				37E1172C2D3EE6E8000BAD92 /* .github */,
-				37E1C3A52D40443F000BAD92 /* Gemfile */,
 			);
 			name = CD;
-			packageProductDependencies = (
-			);
 			productName = CD;
 			productReference = 37E116F62D3EE544000BAD92 /* CD.app */;
 			productType = "com.apple.product-type.application";
@@ -193,8 +184,6 @@
 				37E1170F2D3EE546000BAD92 /* CDTests */,
 			);
 			name = CDTests;
-			packageProductDependencies = (
-			);
 			productName = CDTests;
 			productReference = 37E1170C2D3EE546000BAD92 /* CDTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -216,8 +205,6 @@
 				37E117192D3EE546000BAD92 /* CDUITests */,
 			);
 			name = CDUITests;
-			packageProductDependencies = (
-			);
 			productName = CDUITests;
 			productReference = 37E117162D3EE546000BAD92 /* CDUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
