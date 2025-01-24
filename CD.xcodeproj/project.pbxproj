@@ -44,6 +44,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		37E1023D2D443629000BAD92 /* Fastfile */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Fastfile;
+			sourceTree = "<group>";
+		};
 		37E116F82D3EE544000BAD92 /* CD */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -65,11 +70,6 @@
 		37E1172C2D3EE6E8000BAD92 /* .github */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = .github;
-			sourceTree = "<group>";
-		};
-		37E1C3A82D4045F6000BAD92 /* Gemfile */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Gemfile;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -102,7 +102,7 @@
 		37E116ED2D3EE544000BAD92 = {
 			isa = PBXGroup;
 			children = (
-				37E1C3A82D4045F6000BAD92 /* Gemfile */,
+				37E1023D2D443629000BAD92 /* Fastfile */,
 				37E1172C2D3EE6E8000BAD92 /* .github */,
 				37E116F82D3EE544000BAD92 /* CD */,
 				37E1170F2D3EE546000BAD92 /* CDTests */,
@@ -165,9 +165,9 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				37E1023D2D443629000BAD92 /* Fastfile */,
 				37E116F82D3EE544000BAD92 /* CD */,
 				37E1172C2D3EE6E8000BAD92 /* .github */,
-				37E1C3A82D4045F6000BAD92 /* Gemfile */,
 			);
 			name = CD;
 			packageProductDependencies = (
