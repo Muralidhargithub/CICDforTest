@@ -9,7 +9,7 @@ platform :ios do
       devices: ["iPhone 14"],
       only_testing: ["CDTests"],
       clean: true,
-      output_types: "html,junit",    
+      output_types: "html,junit",
       output_directory: "fastlane/test_output"
     )
   end

@@ -44,6 +44,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		37D48F542D443A3B00843774 /* FastLane */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FastLane;
+			sourceTree = "<group>";
+		};
 		37E116F82D3EE544000BAD92 /* CD */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -97,6 +102,7 @@
 		37E116ED2D3EE544000BAD92 = {
 			isa = PBXGroup;
 			children = (
+				37D48F542D443A3B00843774 /* FastLane */,
 				37E1172C2D3EE6E8000BAD92 /* .github */,
 				37E116F82D3EE544000BAD92 /* CD */,
 				37E1170F2D3EE546000BAD92 /* CDTests */,
@@ -159,6 +165,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				37D48F542D443A3B00843774 /* FastLane */,
 				37E116F82D3EE544000BAD92 /* CD */,
 				37E1172C2D3EE6E8000BAD92 /* .github */,
 			);
