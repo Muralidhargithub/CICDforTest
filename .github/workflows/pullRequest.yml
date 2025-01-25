@@ -3,7 +3,7 @@ name: iOS CI Pipeline
 on:
   pull_request:
     branches:
-      -
+      - second
   push:
     branches:
       - second
@@ -36,8 +36,7 @@ jobs:
       - name: Install dependencies
         run: |
           gem install bundler
-          bundle config set path 'vendor/bundle' # Avoid the deprecated --path flag
-          bundle install
+          bundle install --gemfile=./CD/Gemfile # <-- SPECIFIED THE GEMFILE LOCATION HERE
 
       # Step 5: Run tests using Fastlane
       - name: Run Tests with Fastlane
