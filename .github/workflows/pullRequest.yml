@@ -3,10 +3,10 @@ name: iOS CI Pipeline
 on:
   pull_request:
     branches:
-      - main
+      -
   push:
     branches:
-      - main
+      - second
 
 jobs:
   build-and-test:
@@ -21,14 +21,24 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1 # Use a version compatible with your setup
+          ruby-version: 3.1 # Ensure this matches your local Ruby version
+          bundler-cache: true # Enable caching for Bundler dependencies
 
-      # Step 3: Install dependencies via Bundler
-      - name: Install dependenciesfast
+      # Step 3: Debug to verify Gemfile exists
+      - name: Verify Gemfile exists
+        run: |
+          echo "Current Directory:"
+          pwd
+          echo "Files in Directory:"
+          ls -al
+
+      # Step 4: Install dependencies via Bundler
+      - name: Install dependencies
         run: |
           gem install bundler
-          bundle install --path vendor/bundle
+          bundle config set path 'vendor/bundle' # Avoid the deprecated --path flag
+          bundle install
 
-      # Step 4: Run tests using Fastlane
+      # Step 5: Run tests using Fastlane
       - name: Run Tests with Fastlane
         run: bundle exec fastlane run_tests
