@@ -44,6 +44,7 @@ jobs:
       # Step 5: Run tests using Fastlane
       - name: Run Tests with Fastlane
         run: bundle exec fastlane fast_tests
+        env:
+          FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT: 20
+          FASTLANE_XCODEBUILD_SETTINGS_RETRIES: 6
 
-
-          --gemfile=./CD/Gemfile # <-- SPECIFIED THE GEMFILE LOCATION HERE

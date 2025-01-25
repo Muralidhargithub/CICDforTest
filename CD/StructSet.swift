@@ -66,3 +66,5 @@ struct StructSet<T: Comparable> {
         return elements.min()
     }
 }
+
+//destination: "platform=iOS Simulator,name=iPhone 15 Pro,OS=17.0",
