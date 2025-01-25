@@ -6,7 +6,7 @@ platform :ios do
     scan(
       project: "CD.xcodeproj",
       scheme: "CD",
-      devices: ["iPhone 14"],
+      devices: ["iPhone 16 Pro"],
       only_testing: ["CDTests"],
       clean: true,
       output_types: "html,junit",    
