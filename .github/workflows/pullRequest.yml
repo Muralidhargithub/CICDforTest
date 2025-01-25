@@ -40,4 +40,4 @@ jobs:
 
       # Step 5: Run tests using Fastlane
       - name: Run Tests with Fastlane
-        run: bundle exec fastlane run_tests
+        run: bundle exec fastlane fast_tests
