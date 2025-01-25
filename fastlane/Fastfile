@@ -2,7 +2,7 @@ default_platform(:ios)
 
 platform :ios do
   desc "Run unit tests for CDTests target"
-  lane :run_tests do
+  lane :fast_tests do
     scan(
       project: "CD.xcodeproj",
       scheme: "CD",
