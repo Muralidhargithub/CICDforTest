@@ -78,4 +78,9 @@ final class StructSetTests: XCTestCase {
            XCTAssertEqual(structSet.elements, [1, 2, 4, 5], "The element 3 should be removed from the set.")
            XCTAssertFalse(structSet.elements.contains(3), "The set should not contain the removed element.")
        }
+    func testMinElemen() {
+        structSet.addElements([1, 6, 4])
+        let minElement = structSet.minArrayEle()
+        XCTAssertEqual(minElement, 1)
+    }
 }
